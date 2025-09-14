@@ -1,0 +1,199 @@
+/* Reset global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  background: #3b5998; /* azul facebook */
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.search-bar {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+}
+
+/* Botones nav */
+.nav button {
+  background: #dfe3ee; /* azul claro */
+  border: 1px solid #ccc;
+  color: #3b5998;
+  margin-left: 5px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.nav button:hover {
+  background: #f7f7f7;
+}
+
+/* Layout */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 15px;
+  padding: 15px;
+}
+
+/* Sidebar izquierda */
+.sidebar-left {
+  background: #dfe3ee; /* azul claro */
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.perfil-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #ccc;
+  margin-bottom: 10px;
+}
+
+.nombre {
+  background: #3b5998;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  margin: 10px 0;
+}
+
+.amigos {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.amigo {
+  width: 40px;
+  height: 40px;
+  background: #8b9dc3; /* azul más claro */
+  border-radius: 50%;
+}
+
+/* Contenido central */
+.main-content {
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Sidebar derecha */
+.sidebar-right {
+  background: #dfe3ee;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;  /* Asegura que el contenido no se centre */
+}
+
+/* Caja donde está el botón "Compartir" */
+.box {
+  width: 100%;
+  padding: 10px;
+  background-color: #f0f2f5;
+  border-radius: 8px;
+  display: flex;  /* Usamos flexbox */
+  flex-direction: column;
+  align-items: flex-start;  /* Alinea el contenido al principio */
+}
+
+/* Botón de compartir */
+.btn {
+  background: #3b5998;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: left;  /* Esto hará que el botón se desplace hacia la derecha */
+}
+
+.btn:hover {
+  background: #2d4373;
+}
+
+/* Publicaciones */
+textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.post {
+  background: #f7f7f7;
+  padding: 10px;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+/* Ajustes para las imágenes dentro de las publicaciones */
+.post img {
+  width: 100%;
+  max-width: 100%;  /* Limita el tamaño máximo al 100% del contenedor */
+  height: auto;  /* Mantiene las proporciones de la imagen */
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;  /* Esto asegura que las imágenes se centren en el contenedor */
+}
+
+/* Galería de fotos */
+.photos-grid {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las imágenes se ajusten si no caben en una sola fila */
+  gap: 10px;
+  justify-content: flex-start; /* Alinea las imágenes desde el inicio */
+}
+
+.amigo {
+  width: 100px;  /* Establece un tamaño fijo para las imágenes */
+  height: 100px; /* Mantiene las imágenes cuadradas */
+  border-radius: 50%;  /* Hace que las imágenes sean circulares */
+  overflow: hidden;  /* Asegura que no se desborde el contenido */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.amigo img {
+  width: 100%;  /* Asegura que la imagen ocupe todo el espacio disponible dentro de .amigo */
+  height: 100%;
+  object-fit: cover;  /* Mantiene la proporción de las imágenes */
+}
+
+/* Ajuste para imágenes en la sección de "Cajas" */
+.box img {
+  width: 100%;
+  max-width: 200px;  /* Limita el tamaño máximo de las imágenes */
+  height: auto;
+  margin-top: 10px;
+}

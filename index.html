@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fakebook SPA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">facebook</div>
+    <input type="text" class="search-bar" placeholder="Buscar...">
+    <nav class="nav">
+      <button data-section="muro">Muro</button>
+      <button data-section="info">Info</button>
+      <button data-section="photos">Fotos</button>
+      <button data-section="boxes">Cajas</button>
+    </nav>
+  </header>
+
+  <!-- Layout principal -->
+  <div class="container">
+    <!-- Sidebar izquierda -->
+    <aside class="sidebar-left">
+      <img src="assets/perfil.png" alt="Perfil" class="perfil-img">
+      <h2 class="nombre">Alejandro carabali</h2>
+      <p class="info">Información</p>
+      <p>info</p>
+      <p>X Amigos</p>
+      <div class="amigos">
+        <div class="amigo"></div>
+        <div class="amigo"></div>
+        <div class="amigo"></div>
+      </div>
+      <a href="#">ver todo</a>
+    </aside>
+
+    <!-- Contenido central (SPA) -->
+    <main id="content" class="main-content"></main>
+
+    <!-- Sidebar derecha -->
+    <aside class="sidebar-right">
+      <div class="box">
+        <p>Compartir algo</p>
+        <button class="btn">Compartir</button>
+      </div>
+    </aside>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
